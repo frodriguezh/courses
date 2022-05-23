@@ -1,0 +1,12 @@
+<h1>Integrantes de la familia</h1>
+
+<ul>
+<% @families .each do |family| %>
+    <li>
+        <%= family.nombre%>
+        <%= link_to 'Editar', edit_family_path(id:family.id)%>
+    </li>
+<% end %>
+</ul>
+
+<%= link_to '+Agregar', new_family_path %>
