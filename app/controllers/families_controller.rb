@@ -1,5 +1,5 @@
 class FamiliesController < ApplicationController
-  before_action :set_family, only: [:edit, :delete]
+  before_action :set_family, only: [:show, :destroy]
   
   def index
     @families = Family.all
@@ -22,11 +22,12 @@ class FamiliesController < ApplicationController
 
   def destroy
 
-    #@family.delete
-    #redirect_to families_path
+    @family.delete
+    redirect_to families_path
+
   end
 
-  def edit
+  def show
   end
 
   private

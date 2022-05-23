@@ -4,7 +4,7 @@
 <% @families .each do |family| %>
     <li>
         <%= family.nombre%>
-        <%= link_to 'Editar', edit_family_path(id:family.id)%>
+        <%= link_to 'Ver', show_family_path(id:family.id)%>
     </li>
 <% end %>
 </ul>

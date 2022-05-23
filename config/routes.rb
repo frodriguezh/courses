@@ -4,11 +4,14 @@ Rails.application.routes.draw do
   get 'families/new', to: 'families#new', as:'new_family'
   post 'families', to: 'families#create'
 
+  get 'families/:id', to: 'families#show', as: 'show_family'
 
-  get 'families/:id/edit', to: 'families#edit', as:'edit_family'
+  delete 'families/:id', to: 'families#destroy', as: 'delete_family'
+
+  #get 'families/:id/edit', to: 'families#edit', as:'edit_family'
   #patch 'families/:id/', to: 'families#update', as: 'family'
 
-  get 'families/show'
+ 
 
   resources :videos
 
