@@ -1,0 +1,4 @@
+<h2><%= @course.title %></h2>
+<p><%= @course.description %></p>
+<%= link_to 'Editar', edit_course_path(id:@course.id) %>
+<%= button_to 'Eliminar', delete_course_path(id:@course.id), method: :delete %>
