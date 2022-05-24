@@ -31,7 +31,6 @@ class FamiliesController < ApplicationController
   end
 
   def edit
-    @family = Family.find params[:id]
   end
 
   private
