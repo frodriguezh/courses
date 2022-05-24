@@ -1,0 +1,30 @@
+<%= form_with model:@family do | f | %>
+    <div>
+         <%= f.label :nombre, 'Nombre'%>
+         <%= f.text_field :nombre %>
+    </div>
+    <br>
+    <div>
+         <%= f.label :app, 'Primer Apellido'%>
+         <%= f.text_field :app %>
+    </div>
+    <br>
+    <div>
+         <%= f.label :apm, 'Segundo Apellido'%>
+         <%= f.text_field :apm %>
+    </div>
+    <br>
+    <div>
+         <%= f.label :iquique, '¿Vive en Iquique?'%>
+         <%= f.check_box :iquique %>
+    </div>
+    <br>
+    <div>
+         <%= f.label :santiago, '¿Vive en Santiago?'%>
+         <%= f.check_box :santiago %>
+    </div>
+    <br>
+    <div>
+         <%= f.submit "#{message} integrante"%>
+    </div>
+<% end %>

@@ -1,3 +1,4 @@
-<h2><%= @family.nombre %></h2>
+<h2>Información de: <%= @family.nombre %></h2>
 <p><%= @family.app %></p>
+<%= link_to 'Editar', edit_family_path(id:@family.id)%>
 <%= button_to 'Eliminar', delete_family_path(id:@family.id), method: :delete %>
